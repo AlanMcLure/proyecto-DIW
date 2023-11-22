@@ -1,0 +1,54 @@
+// Variables
+$primary-color: #e20a03;         // Color principal para la barra de navegación
+$button-success-color: #46dd4b;  // Color verde para el botón de éxito
+$background-color: black;        // Color de fondo negro
+$text-color: white;               // Color del texto blanco
+
+// Estilos
+.card {
+    padding: 20px;  // Añade espacio alrededor de toda la tarjeta
+
+    // Efecto hover quitado
+    &:hover {
+        transform: none;
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+
+    figure {
+        margin: 0;
+    }
+}
+
+/* Estilo del carrito de compra */
+// Margins, paddings y negrita
+.cart-details {
+    padding: 20px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+// Aplicación de variables
+.navbar {
+    background-color: $primary-color;  // Aplica el color principal a la barra de navegación
+}
+
+.notification {
+    color: $text-color;                                  // Color de texto para las notificaciones
+    border: 1px solid darken($background-color, 10%);   // Bordes oscuros en un 10% del color de fondo
+}
+
+.button.is-success {
+    background-color: $button-success-color;  // Aplica el color verde al botón de éxito
+    color: $text-color;                        // Color de texto blanco para el botón de éxito
+}

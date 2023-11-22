@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +7,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Proyecto DIW</title>
   </head>
   <body>
-    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
-          <img src="assets/logo-ferrari-f1.png" alt="Tu Logo" />
+          <img src="assets/logo.svg" alt="Logo" />
         </a>
 
         <a
@@ -31,120 +37,56 @@
 
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-start">
-          <h1 class="navbar-item">PORTAFOLIO</h1>
+          <h1 class="title navbar-item has-text-black">
+            Catálogo de Videojuegos
+          </h1>
         </div>
 
         <div class="navbar-end">
-          <a href="#inicio" class="navbar-item">INICIO</a>
-          <a href="#proyectos" class="navbar-item">PROYECTOS</a>
-          <a href="#blog" class="navbar-item">BLOG</a>
-          <a href="#contacto" class="navbar-item">CONTACTO</a>
+          <a href="index.html" class="navbar-item has-text-black">Inicio</a>
+          <a href="#acerca" class="navbar-item has-text-black">Acerca de</a>
+          <a href="#contacto" class="navbar-item has-text-black">Contacto</a>
         </div>
       </div>
     </nav>
-
-    <div class="box has-background-white">
-      <aside class="menu">
-        <p class="menu-label has-text-grey-dark">General</p>
-        <ul class="menu-list">
-          <li>
-            <a class="has-text-grey-dark"> Dashboard </a>
-          </li>
-          <li>
-            <a class="has-text-grey-dark"> Customers </a>
-          </li>
-        </ul>
-        <p class="menu-label has-text-grey-dark">Administration</p>
-        <ul class="menu-list">
-          <li>
-            <a class="menu-label has-text-grey-dark"> Team Settings </a>
-          </li>
-          <li>
-            <a class="is-active"> Manage Your Team </a>
-            <ul>
-              <li>
-                <a class="has-text-grey-dark"> Members </a>
-              </li>
-              <li>
-                <a class="has-text-grey-dark"> Plugins </a>
-              </li>
-              <li>
-                <a class="has-text-grey-dark"> Add a member </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="has-text-grey-dark"> Invitations </a>
-          </li>
-          <li>
-            <a class="has-text-grey-dark">
-              Cloud Storage Environment Settings
-            </a>
-          </li>
-          <li>
-            <a class="has-text-grey-dark"> Authentication </a>
-          </li>
-        </ul>
-        <p class="menu-label has-text-grey-dark">Transactions</p>
-        <ul class="menu-list">
-          <li>
-            <a class="has-text-grey-dark"> Payments </a>
-          </li>
-          <li>
-            <a class="has-text-grey-dark"> Transfers </a>
-          </li>
-          <li>
-            <a class="has-text-grey-dark"> Balance </a>
-          </li>
-        </ul>
-      </aside>
-    </div>
-
-    <div class="box has-background-white">
-      <article class="media">
-        <div class="media-left">
-          <figure class="image is-96x96">
-            <img src="/images/object/2.png" alt="Image" />
-          </figure>
-        </div>
-        <div class="media-content has-text-grey-dark">
-          <div class="content">
-            <p>
-              <strong class="has-text-grey-dark"> Hibiscus Ficus </strong>
-              <small> @NewCollection </small>
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              efficitur sit amet massa fringilla egestas.
-            </p>
+    <!-- Carrusel de promociones (No se mostrará en mobile) -->
+    <section class="section carrusel">
+      <div class="container is-hidden-mobile is-fullhd">
+        <h2 class="title is-4">Promociones</h2>
+        <div class="columns is-multiline">
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo.png" alt="Promo 1" />
+            </figure>
           </div>
-          <nav class="level is-mobile">
-            <div class="level-left">
-              <p
-                class="level-item is-size-3 has-text-primary has-text-weight-bold"
-              >
-                699$
-              </p>
-            </div>
-            <div class="level-right">
-              <p class="level-item">
-                <button class="button is-primary">Buy</button>
-              </p>
-            </div>
-          </nav>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo2.png" alt="Promo 2" />
+            </figure>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo3.png" alt="Promo 3" />
+            </figure>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo4.png" alt="Promo 4" />
+            </figure>
+          </div>
         </div>
-      </article>
-    </div> -->
-    <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#"> Catálogo de Videojuegos </a>
       </div>
-      <div class="navbar-end">
-        <a class="navbar-item" href="#">Inicio</a>
-        <a class="navbar-item" href="#">Acerca de</a>
-        <a class="navbar-item" href="#">Contacto</a>
-      </div>
-    </nav>
+    </section>
+
+    <!-- Tabs para categorías de videojuegos -->
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active"><a href="#accion">Acción</a></li>
+        <li><a href="#aventura">Aventura</a></li>
+        <li><a href="#rol">Rol</a></li>
+        <li><a href="#deporte">Deporte</a></li>
+      </ul>
+    </div>
 
     <!-- Main Section -->
     <section class="section">
@@ -152,9 +94,10 @@
         <div class="columns">
           <!-- Cards de Videojuegos (3/4 de la pantalla) -->
           <div class="column is-three-quarters">
+            <h2 class="title is-4">Videojuegos</h2>
             <div class="columns is-multiline">
-              <!-- Repite este bloque para cada card de videojuego -->
-              <div class="column is-one-third">
+              <!-- Código de una card de un videojuego concreto -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -165,16 +108,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">Grand Theft Auto V</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -182,16 +144,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">FC24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -199,16 +180,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">NBA 2k24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -216,16 +216,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">The Binding of Isaac</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -236,16 +255,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">Grand Theft Auto V</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -253,16 +291,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">FC24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -270,16 +327,35 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">NBA 2k24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
-              <div class="column is-one-third">
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
@@ -287,33 +363,74 @@
                     </figure>
                   </div>
                   <div class="card-content">
-                    <p class="title is-4">Nombre del Videojuego</p>
-                    <p class="subtitle is-6">Plataforma: PS5</p>
-                    <a href="purchase.html" class="button is-primary"
-                      >Ver Detalles</a
-                    >
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">The Binding of Isaac</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Fin del bloque repetido -->
+              <!-- Fin (comienza la repetición) -->
             </div>
           </div>
 
-          <!-- Menú Lateral (1/4 de la pantalla) -->
-          <div class="column">
+          <!-- Menú Lateral (1/4 de la pantalla, no se mostrará en mobile) -->
+          <div class="column is-hidden-mobile is-one-quarter">
             <aside class="menu">
-              <p class="menu-label">Categorías</p>
-              <ul class="menu-list">
-                <li><a href="#">Acción</a></li>
-                <li><a href="#">Aventura</a></li>
-                <li><a href="#">Deportes</a></li>
-                <!-- Agrega más categorías según sea necesario -->
+              <p class="menu-label has-text-centered">Categorías</p>
+              <ul class="menu-list has-text-right">
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Móviles</a></li>
+                <li><a href="#">Electrónica</a></li>
+              </ul>
+              <p class="menu-label has-text-centered">Vender</p>
+              <ul class="menu-list has-text-right">
+                <li><a href="#">Quieres vender?</a></li>
               </ul>
             </aside>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Creado por Alan McLure Alarcón &copy; 2023</p>
+        <div class="social-icons">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Script para el menú burger -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         // Get all "navbar-burger" elements

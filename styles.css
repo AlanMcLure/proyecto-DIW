@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #e20a03; }
+
+.card {
+  padding: 20px; }
+  .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease; }
+
+.card-image {
+  width: 100%;
+  height: auto; }
+  .card-image figure {
+    margin: 0; }
+
+.carrusel img {
+  border-radius: 10px; }
+
+.footer {
+  background-color: black;
+  color: white; }
+  .footer .social-icons a {
+    color: white; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,45 @@
+// Variables
+$primary-color: #e20a03;         // Color principal para la barra de navegación
+$background-color: black;        // Color de fondo negro
+$text-color: white;               // Color del texto blanco
+
+// Estilos
+.navbar {
+    background-color: $primary-color;  // Aplica el color principal a la barra de navegación
+}
+
+.card {
+    padding: 20px;  // Añade espacio alrededor de toda la tarjeta
+
+    // Efecto hover
+    &:hover {
+        transform: translateY(-5px);  // Sube la tarjeta 5 píxeles al hacer hover
+        transition: transform 0.3s ease;  // Agrega una transición suave de 0.3 segundos
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+
+    figure {
+        margin: 0;
+    }
+}
+
+.carrusel {
+    img {
+        border-radius: 10px;  // Agrega un borde redondeado a las imágenes del carrusel
+    }
+}
+
+.footer {
+    background-color: $background-color;  // Aplica el color de fondo negro al footer
+    color: $text-color;                   // Aplica el color de texto blanco al footer
+
+    .social-icons {
+        a {
+            color: $text-color;  // Aplica el color de texto blanco a los iconos de redes sociales
+        }
+    }
+}

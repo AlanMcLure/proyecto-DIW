@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles del Videojuego</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="assets/logo.svg" alt="Logo" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <h1 class="title navbar-item has-text-black">
+            Catálogo de Videojuegos
+          </h1>
+        </div>
+
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item has-text-black">Inicio</a>
+          <a href="#acerca" class="navbar-item has-text-black">Acerca de</a>
+          <a href="#contacto" class="navbar-item has-text-black">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Notification de Bulma -->
+    <div class="notification is-success">
+      <button class="delete"></button>
+      ¡Compra realizada con éxito!
+    </div>
+    <!-- Main Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- Detalles del Videojuego -->
+          <div class="column is-two-thirds">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="assets/Grand_Theft_Auto_V.png"
+                    alt="Nombre del Videojuego"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Grand Theft Auto V</p>
+                <p class="subtitle is-6">Plataforma: PS5</p>
+                <!-- Otros detalles del juego -->
+
+                <!-- Precio y botón de compra -->
+                <div class="level">
+                  <!-- Precio en la esquina inferior izquierda -->
+                  <div class="level-left">
+                    <div class="price-tag">
+                      <p class="has-text-weight-bold">49.99€</p>
+                    </div>
+                  </div>
+
+                  <!-- Icono de compra en la esquina inferior derecha -->
+                  <div class="level-right">
+                    <div class="purchase-icon">
+                      <a href="#">
+                        <i class="fas fa-shopping-cart"></i> Comprar
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Información del Carrito de Compra -->
+          <div class="column">
+            <div class="card cart-details">
+              <p class="title is-4">Carrito de Compra</p>
+
+              <!-- Elementos del carrito -->
+              <div class="cart-item">
+                <p class="subtitle is-6">Grand Theft Auto V</p>
+                <p>Cantidad: 1</p>
+                <p>Precio unitario: 49.99€</p>
+                <hr />
+              </div>
+
+              <div class="cart-item">
+                <p class="subtitle is-6">Juego 2</p>
+                <p>Cantidad: 1</p>
+                <p>Precio unitario: 29.99€</p>
+                <hr />
+              </div>
+
+              <!-- Total del carrito -->
+              <div class="cart-total">
+                <p>Total: 79.98€</p>
+              </div>
+
+              <!-- Botón de Pagar -->
+              <div class="level-right">
+                <button class="button is-success">Pagar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Creado por Alan McLure Alarcón &copy; 2023</p>
+        <div class="social-icons">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Agrega más iconos según sea necesario -->
+        </div>
+      </div>
+    </footer>
+    <!-- Script para el menú burger -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
